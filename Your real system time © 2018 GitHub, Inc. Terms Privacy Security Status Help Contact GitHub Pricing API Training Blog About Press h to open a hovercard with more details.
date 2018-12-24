@@ -1,0 +1,78 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @oscarg933
+Sign out
+You are over your private repository plan limit (4 of 0). Please upgrade your plan, make private repositories public, or remove private repositories so that you are within your plan limit.
+Your private repositories have been locked until this is resolved. Thanks for understanding. You can contact support with any questions.
+0
+0 21 oscarg933/timemachine
+forked from schickling/timemachine
+ Code  Pull requests 0  Projects 0  Wiki  Insights  Settings
+Test your time-dependent app by monkey patching the Date function and overriding your system time.
+ 68 commits
+ 1 branch
+ 10 releases
+ 1 contributor
+ JavaScript 100.0%
+ Pull request   Compare This branch is 1 commit ahead of schickling:master.
+@oscarg933
+oscarg933 Create Predictions-with-Machine-Learning-in-Python.git
+Latest commit b868bdc  a minute ago
+Type	Name	Latest commit message	Commit time
+https/github.com/oscarg933	Create Predictions-with-Machine-Learning-in-Python.git	a minute ago
+src	fix: 1) new Date('<explicit date string'>) no longer fails if tick = …	2 years ago
+test	fix: Update unit tests to better handle different time zones.	2 years ago
+.gitignore	fix: 1) new Date('<explicit date string'>) no longer fails if tick = …	2 years ago
+.jshintrc	Keep prototype	5 years ago
+.travis.yml	script	5 years ago
+Gruntfile.js	bump version	2 years ago
+README.md	fix deps	4 years ago
+bower.json	Release v0.2.5	4 years ago
+karma.conf.js	Coverage	5 years ago
+package.json	bump	2 years ago
+timemachine.js	Build release files	2 years ago
+timemachine.min.js	Build release files	2 years ago
+ README.md
+timemachine Build Status
+Test your time-dependent app by monkey patching the Date function and overriding your system time. Timemachine is compatible with global namespaces, RequireJS, CommonJS and NodeJS.
+
+Installation
+Bower
+$ bower install timemachine
+NPM
+$ npm install timemachine
+Usage
+Config
+timemachine.config({
+  dateString: 'December 25, 1991 13:12:59'
+});
+
+console.log(new Date()); // December 25, 1991 13:12:59
+Parameter	Description	Default
+dateString	Date you want set as a string	Thu, 01 Jan 1970 00:00:00 GMT
+timestamp	Date you want set as a timestamp	0
+difference	Time offset in milliseconds	0
+tick	Whether the system clock should continue ticking	false
+keepTime	Whether the system time should be kept	false
+Reset
+timemachine.reset();
+console.log(new Date()); // Your real system time
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.
